@@ -2,60 +2,109 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.middle {
+.navegation-menu{
   display: flex;
-  gap: 100px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  align-items: center;
+  gap: 380px; 
+}
+.icons-right{
+  width: 30px; 
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.barra-navegacao-superior{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.middle {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin: 20px;
 }
 .right {
   display: flex;
-  gap: 30px;
   font-size: 25px;
   margin-right: 75px;
 }
 .left {
-  display: flex; /* Adicionado para alinhar os itens lado a lado */
-  align-items: center; /* Adicionado para alinhar os itens verticalmente no centro */
+  display: flex;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
 }
 .filterbar {
-  width: 100vw;
+  width: 100;
   height: 100px; 
   background-color: #F9F1E7;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  padding: 0; /* Adicionando padding para espaçamento interno */
 }
 .filterbar .filterbar-itens {
   display: flex;
-  width: 20.05px;
-  height: 20.67px;
-  gap: 20px;
-  margin-left: 98px;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
   align-items: center;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.results{
+  margin-left: 20px; 
+  white-space: nowrap; 
+  font-size: 16px; 
+  font-family: "Poppins", sans-serif;
 }
 .vertical-line {
   border-left: 1px #9F9F9F solid;
-  height: 100%;
-  width: 0;
+  height: 40px; /* Ajuste a altura conforme necessário */
   display: inline-block;
 }
 .show-items {
   display: flex;
   align-items: center;
-  margin-left: 850px;
+}
+.item-list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px; /* Adiciona margem para separar da filterbar */
+  display: flex; /* Para exibição em linha */
+  flex-wrap: wrap; /* Para quebrar a linha quando necessário */
+  gap: 100px; /* Espaçamento entre os itens */
+
 }
 
+.item {
+  height: 360px;
+  width: 285px;
+  border: 1px solid black;
+  display: flex; /* Para garantir que a imagem preencha o item */
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/*footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: #000000; /* Adicione a cor de fundo desejada 
+  overflow: hidden;
+}
+*/

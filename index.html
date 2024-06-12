@@ -7,33 +7,37 @@
 </head>
 <body>
     <header>
-        <div class="left">
-            <img src="/img/logo.png" alt="logo" style="width: 75px; height: 75px;">           
-            Compass
-        </div>
-        <div class="middle">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="right">
-            <img src="/img/mdi_account-alert-outline.png" alt="Meu Ícone" style="width: 30px; height: 30px;">
-            <i class="fa fa-search"></i>
-            <img src="/img/icone-coracao.png" alt="coracao" style="width: 25px; height: 25px;"></i>
-            <i class="fa fa-shopping-cart"></i>
-        </div>
+        <div class="navegation-menu">
+            <div class="left">
+                <img src="/img/logo.png" alt="logo" style="width: 75px; height: 75px;">           
+                Compass
+            </div>
+            <div class="middle">
+                <a class="barra-navegacao-superior" href="#">Home</a>
+                <a class="barra-navegacao-superior" href="#">Shop</a>
+                <a class="barra-navegacao-superior" href="#">About</a>
+                <a class="barra-navegacao-superior" href="#">Contact</a>
+            </div>
+            <div class="right">
+                <img class="icons-right" src="/img/mdi_account-alert-outline.png" alt="alerta">
+                <img class="icons-right" src="/img/lupa.png" alt="pesquisa">
+                <img class="icons-right" src="/img/icone-coracao.png" alt="coracao">
+                <img class="icons-right" src="/img/carrinho.png" alt="carrinho">
+            </div>
     </header>
-    <div style="width: 100vw; height: 360px; background-color: #ffffff; overflow: hidden;">
-        <img src="/img/Header.jpeg" alt="Minha Imagem" style="width: 100%; height: 100%; object-fit: cover; filter: blur(3px);"> <!-- Propriedade object-fit adicionada aqui -->
+    <div style="width: 100%; height: 360px; background-color: #ffffff; overflow: hidden;">
+        <img src="/img/Header.jpeg" alt="Minha Imagem" style="width: 100%; height: 100%; object-fit: cover; filter: blur(0px);">
     </div>
     <div class="filterbar">
-        <div class="filterbar-itens">    
-            <img src="/img/filtro.png"></a> 
-            Filter
-            <hr class="vertical-line"/>
-        <div class="results" style="margin-left: 20px; white-space: nowrap; font-size: medium;">  
-            Showing 1-16 of 32 results  
+        <div class="left">
+            <div class="filterbar-itens">    
+                <img src="/img/filtro.png">
+                Filter
+                <hr class="vertical-line"/>
+            </div>
+            <div class="results">  
+                <p>Showing 1-16 of 32 results</p>
+            </div>
         </div>
         <div class="show-items">
             Show
@@ -41,7 +45,20 @@
                 16
             </div>
         </div> 
-
-</div>
+    </div>
+    <ul class="item-list">
+        <li class="item">
+            <img src="path/to/image1.jpg" alt="Item 1">
+        </li>
+        <li class="item">
+            <img src="path/to/image2.jpg" alt="Item 2">
+        </li>
+        <li class="item">
+            <img src="path/to/image3.jpg" alt="Item 3">
+        </li>
+        <li class="item">
+            <img src="path/to/image4.jpg" alt="Item 4">
+        </li>
+    </ul>
 </body>
 </html>
