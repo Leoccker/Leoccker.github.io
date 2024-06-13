@@ -93,11 +93,27 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 .item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.pagination button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  background-color: #F9F1E7;
+  border: none;
+}
+.pagination button.active {
+  background-color: #B88E2F;
+  border: none;
 }
 /*footer {
   width: 100%;
