@@ -1,8 +1,9 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;  
 }
 header {
   align-items: center;
@@ -50,7 +51,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0; /* Adicionando padding para espaçamento interno */
+  padding: 0 20px; /* Adicionando padding para espaçamento interno */
+  box-sizing: border-box;
 }
 .filterbar .filterbar-itens {
   display: flex;
@@ -75,19 +77,21 @@ header {
   align-items: center;
 }
 .item-list {
-  width: 100%;
+  width: calc(100% - 40px);
   list-style-type: none;
   padding: 0;
   margin: 20px; /* Adiciona margem para separar da filterbar */
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex; /* Para exibição em linha */
   flex-wrap: wrap; /* Para quebrar a linha quando necessário */
-  gap: 100px; /* Espaçamento entre os itens */
-
+  gap: 185px; /* Espaçamento entre os itens */
+  box-sizing: border-box; /* Para garantir que o espaçamento não ultrapasse o container */
 }
 
 .item {
-  height: 360px;
-  width: 285px;
+  height: 250px;
+  width: 215px;
   border: 1px solid black;
   display: flex; /* Para garantir que a imagem preencha o item */
   align-items: center;
@@ -115,12 +119,48 @@ header {
   background-color: #B88E2F;
   border: none;
 }
-/*footer {
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  background-color: #000000; /* Adicione a cor de fundo desejada 
-  overflow: hidden;
+.advantages-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 150px;
+  background-color: #FAF3EA; /* Adicione a cor de fundo desejada */
 }
-*/
+.advantage {
+  display: flex;
+  align-items: center;
+}
+.advantage img {
+  width: 50px; /* Ajuste o tamanho do ícone */
+  margin-right: 20px;
+}
+.advantage-text h3 {
+  font-size: 24px;
+  color: #000; /* Cor do título */
+}
+.advantage-text p {
+  font-size: 16px;
+  color: #666; /* Cor da descrição */
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 0;
+  width: 100%;    
+  height: 60px;
+  background-color: #ffffff;
+}
+.footer .section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .section h3 {
+  order: 1;
+}
+
+.footer .section a, .footer .section form {
+  order: 2;
+}
