@@ -61,6 +61,10 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
+.filterbar-itens button {
+  border: none;
+  background: none;
+}
 .results{
   margin-left: 20px; 
   white-space: nowrap; 
@@ -71,10 +75,6 @@ header {
   border-left: 1px #9F9F9F solid;
   height: 40px; /* Ajuste a altura conforme necessário */
   display: inline-block;
-}
-.show-items {
-  display: flex;
-  align-items: center;
 }
 .item-list {
   width: calc(100% - 40px);
@@ -90,17 +90,43 @@ header {
 }
 
 .item {
-  height: 250px;
+  height: 350px; /* Aumentei a altura para acomodar os textos */
   width: 215px;
-  border: 1px solid black;
-  display: flex; /* Para garantir que a imagem preencha o item */
+  display: flex;
+  flex-direction: column; /* Para alinhar os itens verticalmente */
+  align-items: flex-start; /* Para alinhar os itens à esquerda */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.img-container {
+  height: 75%; /* Define a altura do contêiner da imagem como 75% do item */
+  width: 100%; /* Define a largura do contêiner da imagem como 100% do item */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.item-title {
+  font-size: 16px;
+  margin: 5px 0 2px 0; /* Margem entre o título e a imagem */
+}
+
+.item-description {
+  font-size: 14px;
+  margin: 2px 0; /* Margem entre a descrição e o título */
+}
+
+.item-price {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 2px 0; /* Margem entre o preço e a descrição */
 }
 .pagination {
   display: flex;
