@@ -68,3 +68,18 @@ function filterItems() {
   itemListParent.innerHTML = "";
   sortedItems.forEach((item) => itemListParent.appendChild(item));
 }
+
+function showItems() {
+  const itemsCount = document.getElementById("itemsCount").value;
+  const itemsList = document.querySelectorAll(".item-list .item");
+  const itemsArray = Array.from(itemsList);
+
+  itemsArray.forEach(item => item.style.display = "block");
+
+  for (let i = itemsCount; i < itemsArray.length; i++) {
+    itemsArray[i].style.display = "none";
+  }
+
+  var resultsDiv = document.querySelector(".results p");
+  resultsDiv.textContent = "Showing 1-" + itemsCount + " of " + itemsArray.length + " results";
+}
