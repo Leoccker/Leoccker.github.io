@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-    <script src="index.js"></script>  
 </head>
 <body>
     <header>
@@ -199,10 +198,10 @@
         </li>
     </ul>
     <div class="pagination">
-        <button class="active">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>Next</button>
+        <button class="active" onclick="changePage(1)">1</button>
+        <button onclick="changePage(2)">2</button>
+        <button onclick="changePage(3)">3</button>
+        <button id="next" onclick="nextPage()">Next</button>
     </div>
     <div class="advantages-bar">
         <div class="advantage">
@@ -257,13 +256,14 @@
             </div>
             <div class="section">
                 <h3>Newsletter</h3>
-                <!-- Adicione seu formulário de inscrição na newsletter aqui -->
-                <form action="#">
+                <form action="#" onsubmit="return validadeEmail()">
                     <input type="email" placeholder="Your email">
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
     </footer>
+<script src="index.js"></script>  
+<script src="pagination.js"></script>
 </body>
 </html>
