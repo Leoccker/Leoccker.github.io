@@ -131,13 +131,13 @@ function updatePaginationButtons(totalPages) {
 }
 
 itemsPerPageSelect.addEventListener("change", () => {
-  changePage(1); // Reset to first page when items per page changes
+  changePage(1);
 });
 
 function showItems() {
-  changePage(1); // Ensure the first page is shown after changing items per page
+  changePage(1);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  changePage(1); // Initialize the first page on load
+  changePage(1);
 });
