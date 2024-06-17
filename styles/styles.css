@@ -13,13 +13,16 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   align-items: center;
-  gap: 380px; 
+  gap: 25%; 
 }
 .icons-right{
   width: 30px; 
   height: 30px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+.icons-right > *:last-child{
+  margin-right: 0;
 }
 .barra-navegacao-superior{
   margin-right: 10px;
@@ -85,11 +88,12 @@ header {
   margin-right: 50px;
   display: flex; /* Para exibição em linha */
   flex-wrap: wrap; /* Para quebrar a linha quando necessário */
-  gap: 185px; /* Espaçamento entre os itens */
+  gap: 12.5%; /* Espaçamento entre os itens */
   box-sizing: border-box; /* Para garantir que o espaçamento não ultrapasse o container */
 }
 
 .item {
+  position: relative;
   height: 350px; /* Aumentei a altura para acomodar os textos */
   width: 215px;
   display: flex;
@@ -128,6 +132,60 @@ header {
   font-weight: bold;
   margin: 2px 0; /* Margem entre o preço e a descrição */
 }
+.item .hover-info {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(58, 58, 58, 0.8);
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hover-info .icon-text {
+  font-size: 12px; 
+}
+
+.hover-info .icon-container img {
+  width: 12px;
+  height: 12px; 
+}
+.hover-info .hover-text {
+  background-color: white;
+  color: #B88E2F;
+  padding: 10px;
+}
+.hover-info .icons-row{
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  width: 100%;
+}
+.hover-info .icon-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.hover-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.hover-info .icon-text {
+  color: white;
+}
+.item:hover .hover-info {
+  display: flex;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
