@@ -35,6 +35,11 @@ header {
   font-size: 16px;
   margin: 20px;
 }
+
+.middle a{
+  color: #000;
+  text-decoration: none;
+}
 .right {
   display: flex;
   font-size: 25px;
@@ -54,7 +59,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Adicionando padding para espaçamento interno */
+  padding: 0 20px; 
   box-sizing: border-box;
 }
 .filterbar .filterbar-itens {
@@ -76,36 +81,36 @@ header {
 }
 .vertical-line {
   border-left: 1px #9F9F9F solid;
-  height: 40px; /* Ajuste a altura conforme necessário */
+  height: 40px; 
   display: inline-block;
 }
 .item-list {
   width: calc(100% - 40px);
   list-style-type: none;
   padding: 0;
-  margin: 20px; /* Adiciona margem para separar da filterbar */
+  margin: 20px;
   margin-left: 50px;
   margin-right: 50px;
-  display: flex; /* Para exibição em linha */
-  flex-wrap: wrap; /* Para quebrar a linha quando necessário */
-  gap: 12.5%; /* Espaçamento entre os itens */
-  box-sizing: border-box; /* Para garantir que o espaçamento não ultrapasse o container */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 12.5%; 
+  box-sizing: border-box; 
 }
 
 .item {
   position: relative;
-  height: 350px; /* Aumentei a altura para acomodar os textos */
+  height: 350px;
   width: 215px;
   display: flex;
-  flex-direction: column; /* Para alinhar os itens verticalmente */
-  align-items: flex-start; /* Para alinhar os itens à esquerda */
+  flex-direction: column; 
+  align-items: flex-start; 
   padding: 10px;
   box-sizing: border-box;
 }
 
 .img-container {
-  height: 75%; /* Define a altura do contêiner da imagem como 75% do item */
-  width: 100%; /* Define a largura do contêiner da imagem como 100% do item */
+  height: 75%; 
+  width: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,18 +124,27 @@ header {
 
 .item-title {
   font-size: 16px;
-  margin: 5px 0 2px 0; /* Margem entre o título e a imagem */
+  margin: 5px 0 2px 0;
+  font-family: "Poppins", sans-serif; 
 }
 
 .item-description {
   font-size: 14px;
-  margin: 2px 0; /* Margem entre a descrição e o título */
+  margin: 2px 0; 
+  font-family: "Poppins", sans-serif;
 }
 
 .item-price {
   font-size: 14px;
   font-weight: bold;
-  margin: 2px 0; /* Margem entre o preço e a descrição */
+  margin: 2px 0; 
+  font-family: "Poppins", sans-serif; 
+}
+.total-price {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif; 
+  text-decoration: line-through; 
+  color: #B0B0B0;
 }
 .item .hover-info {
   display: none;
@@ -208,23 +222,23 @@ header {
   justify-content: space-between;
   padding: 20px;
   height: 150px;
-  background-color: #FAF3EA; /* Adicione a cor de fundo desejada */
+  background-color: #FAF3EA; 
 }
 .advantage {
   display: flex;
   align-items: center;
 }
 .advantage img {
-  width: 50px; /* Ajuste o tamanho do ícone */
+  width: 50px; 
   margin-right: 20px;
 }
 .advantage-text h3 {
   font-size: 24px;
-  color: #000; /* Cor do título */
+  color: #000; 
 }
 .advantage-text p {
   font-size: 16px;
-  color: #666; /* Cor da descrição */
+  color: #666; 
 }
 .footer {
   display: flex;
@@ -234,13 +248,23 @@ header {
   width: 100%;    
   height: 60px;
   background-color: #ffffff;
+  font-family: "Poppins", sans-serif; 
 }
+
 .footer .section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
+.footer .section a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .section p {
+  color: #9F9F9F;
+}
 .footer .section h3 {
   order: 1;
 }

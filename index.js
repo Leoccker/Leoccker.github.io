@@ -120,6 +120,7 @@ function changePage(page) {
 
 function nextPage() {
   changePage(currentPage + 1);
+  window.scrollTo(0, 0);
 }
 
 function updatePaginationButtons(totalPages) {
